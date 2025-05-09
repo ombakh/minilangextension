@@ -2,12 +2,39 @@
   "name": "minilang",
   "displayName": "Mini-Lang Support",
   "version": "1.0.0",
+  "description": "Support for the MiniLang language in VS Code",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["minilang", "language", "syntax", "highlighting"],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "minilang",
+        "aliases": ["MiniLang", "minilang"],
+        "extensions": [".mini"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "minilang",
+        "scopeName": "source.minilang",
+        "path": "./syntaxes/minilang.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "minilang",
+        "path": "./snippets/minilang.code-snippets"
+      }
+    ]
+  }
 }
