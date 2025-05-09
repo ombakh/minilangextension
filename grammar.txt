@@ -2,11 +2,16 @@
 
 Main Point of Execution
 
-begin: 
+proc myFoo() => {   # functions that go before the beginning of the program
+}
+begin:  #MANDATORY - function dec before begin; = to main body of program
 
 Ending Main Point of Execution
 
-end 
+end   #MANDATORY - end of body of code 3
+
+
+
 
 Declaring Variables with type;
     Integers
