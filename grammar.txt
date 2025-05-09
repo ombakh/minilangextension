@@ -1,0 +1,71 @@
+#Mini Lang Syntax
+
+Main Point of Execution
+
+begin: 
+
+Ending Main Point of Execution
+
+end 
+
+Declaring Variables with type;
+    Integers
+        int a;
+        int b = 5;
+    Doubles
+        double a;
+        doubel b = 3.14;
+    Chars
+        char a;
+        char b = 'z';
+    Strings
+        str a = "Hello World!";
+    bools
+        bool newStatement = false;
+        bool oldStatement;
+
+Print Statements:
+
+    out_to_console("Hello, World!");
+    
+    str myString = "Hey, om";
+    out_to_console(myString);
+
+Functions:
+    keyword for func = proc
+
+    proc myFoo() => {
+        //code stuff
+
+        //return statements within a Functions (not required)
+        result => {variable}
+    }
+
+Comments:
+    Single Line Comment
+        >>$
+
+    MultiLine Comment
+    begins with <<$
+    ends with $>>
+
+While Loops
+    keyword here is 'check'
+
+    check(arguments (t/f)){
+        do something
+    }
+
+Inputting
+                        //identifier stores the user input
+input<int>("prompt") => identifier;
+    //<int> is the type we are expecting
+
+if statements
+
+if(condition) {
+    do this;
+} else {
+    do this;
+}
+
