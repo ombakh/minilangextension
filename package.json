@@ -1,13 +1,58 @@
 {
   "name": "minilang",
   "displayName": "Mini-Lang Support",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Language Support for Mini-Lang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mlng",
+        "aliases": [
+          "Mini-Lang",
+          "mlng"
+        ],
+        "extensions": [
+          ".mlng"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mlng",
+        "scopeName": "source.mlng",
+        "path": "./syntaxes/mlng.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.15.17",
+    "eslint": "^9.26.0",
+    "glob": "^11.0.2",
+    "mocha": "^11.2.2",
+    "typescript": "^5.8.3",
+    "vscode-test": "^1.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ombakh/minilangextension"
+  },
+  "publisher": "Om B. && Ethan H."
 }
