@@ -1,5 +1,6 @@
 {
-  "name": "minilangextension",
+  "name": "minilang",
+  "displayName": "Mini-Lang Support",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
