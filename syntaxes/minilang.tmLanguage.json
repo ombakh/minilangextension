@@ -1,0 +1,50 @@
+{
+    "name": "Mini-Lang",
+    "scopeName": "source.mlng",
+    "fileTypes": [
+        "mlng"
+    ],
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#brackets"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-greater-dollar.mlng",
+                    "match": ">>\\$.*$"
+                },
+                {
+                    "name": "comment.block.mlng",
+                    "begin": "<<\\$\\$",
+                    "end": "\\$\\$>>"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.mlng",
+                    "match": "\\b(if|else|check|for|result)\\b"
+                }
+            ]
+        }
+    }
+}
