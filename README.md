@@ -19,6 +19,6 @@ Recognition of language-specific elements:
 ## About Mini-Lang
 Mini-Lang is a custom programming language featuring unique syntax elements for array manipulation, simplified input/output operations, and a straightforward execution model.
 Development
-This extension is currently under development by Om B. and Ethan H. as part of a computer science project.
+This extension is currently under development by Om B. and Ethan H..
 ___
 © 2025 Om B. & Ethan H.
