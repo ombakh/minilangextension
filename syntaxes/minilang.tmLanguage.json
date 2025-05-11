@@ -42,7 +42,90 @@
             "patterns": [
                 {
                     "name": "keyword.control.mlng",
-                    "match": "\\b(if|else|check|for|result)\\b"
+                    "match": "\\b(if|else|check|for|repeat|range)\\b"
+                },
+                {
+                    "name": "keyword.execution.mlng",
+                    "match": "\\b(begin:|end)\\b"
+                },
+                {
+                    "name": "keyword.function.mlng",
+                    "match": "\\b(proc|result)b\\"
+                },
+                {
+                    "name": "keyword.type.mlng",
+                    "match": "\\b(int|double|str|char|bool|elements)b\\"
+                },
+                {
+                    "name": "keyword.input-output.mlng",
+                    "match": "\\b(input|out_to_console)b\\"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.mlng",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.mlng",
+                            "match": "\\\\n"
+                        }
+                    ]
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.mlng",
+                    "match": "\\b([0-9]+(\\.([0-9]+)?)?|\\.([0-9]+))\\b"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.arithmetic.mlng",
+                    "match": "[\\+\\-\\*/\\%]"
+                },
+                {
+                    "name": "keyword.operator.assignment.mlng",
+                    "match": "=|\\+=|\\|="
+                },
+                {
+                    "name": "keyword.operator.comparison.mlng",
+                    "match": "==|<=|>=|<|>|=/="
+                },
+                {
+                    "name": "keyword.operator.increment.mlng",
+                    "match": "\\+\\+|\\-\\-"
+                },
+                {
+                    "name": "keyword.operator.array.mlng",
+                    "match": "@|\\$|\\#|\\.\\.|\\.|\\.\\.\\.|(\\+>)|(-<)|(~>)|(<~)"
+                },
+                {
+                    "name": "keyword.operator.other.mlng",
+                    "match": "=>"
+                }
+            ]
+        },
+        "brackets": {
+            "patterns": [
+                {
+                    "name": "punctuation.brackets.mlng",
+                    "match": "[\\(\\)\\{\\}]"
+                },
+                {
+                    "name": "punctuation.terminator.mlng",
+                    "match": ";"
+                },
+                {
+                    "name": "punctuation.seperator.mlng",
+                    "match": ","
                 }
             ]
         }
