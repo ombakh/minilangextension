@@ -3,8 +3,9 @@
   "displayName": "Mini-Lang Support",
   "description": "Language Support for Mini-Lang",
   "version": "0.0.1",
+  "icon": "icon.png",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Programming Languages"
@@ -54,5 +55,5 @@
     "type": "git",
     "url": "https://github.com/ombakh/minilangextension"
   },
-  "publisher": "Om B. && Ethan H."
+  "publisher": "ombakh-ethh"
 }
