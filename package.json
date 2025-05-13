@@ -3,7 +3,7 @@
   "displayName": "Mini-Lang Support",
   "description": "Language Support for Mini-Lang",
   "version": "0.0.1",
-  "icon": "icon.png",
+  "icon": "MINILANG-Icon.png",
   "engines": {
     "vscode": "^1.100.0"
   },
